@@ -9,7 +9,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    
+    <script src="https://kit.fontawesome.com/65dbb7075c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css" />
     
     <title>Fylo</title>
@@ -17,8 +17,8 @@
   <body>
 
     <!-- Navigation bar -->
-
-    <div class="logo">
+<div class="navigation-bar">
+    <div class="logo responsive">
       <img src="src/images/fylo-logo.png" alt="top-logo" />
     </div>
     <ul class="nav justify-content-end">
@@ -32,7 +32,10 @@
         <a class="nav-link" href="#">Sign In</a>
       </li>
     </ul>
-    <div class="container main">
+</div>
+
+<!-- Main -->
+<div class="container main">
       <div class="row">
         <div class="col-lg-12">
           <img src="src/images/files_and_folder.png" alt="tax-files" />
@@ -105,7 +108,7 @@
           Securely share files and folders with friends, family and collegues for live collaboration. No email attachements required.
 
           </p>
-          <a href="#">See how Fylo works</a>
+          <a href="#">See how Fylo works <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
     </div>
@@ -116,47 +119,61 @@
 <div class="card-deck">
   <div class="card">
       <p class="card-text">Fylo has improved our team productivety by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-      <p class="card-text">Satish Patel <small class="text-muted">Founder & CEO, Huddle</small></p>
+      <p class="card-text-name">
+        <i class="fas fa-user-circle"></i>
+        Satish Patel</p>
+      <small class="text-muted">Founder & CEO, Huddle</small>
   </div>
   <div class="card">
       <p class="card-text">Fylo has improved our team productivety by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-      <p class="card-text">Bruce McKenzie <small class="text-muted">Founder & CEO, Huddle</small></p>
+      <p class="card-text-name">
+        <i class="fas fa-user-circle"></i>
+        Bruce McKenzie</p>
+      <small class="text-muted">Founder & CEO, Huddle</small>
   </div>
   <div class="card">
       <p class="card-text">Fylo has improved our team productivety by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-      <p class="card-text">Iva Boyd <small class="text-muted">Founder & CEO, Huddle</small></p>
+      <p class="card-text-name">
+        <i class="fas fa-user-circle"></i>
+        Iva Boyd</p>
+      <small class="text-muted">Founder & CEO, Huddle</small>
   </div>
 </div>
 </div>
 
 <!-- Access form -->
 
-<div class="container shadow rounded access-form" style="background-color: #1C2430;">
+<div class="container shadow rounded access-form">
   <h1>
     Get early access today
   </h1>
   <p>
     It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
   </p>
- <form class="row">
-  <div class="form-group col-sm-6">
+ <div class="row access-form-2">
+  <div class="form-group col-md-8">
     <input type="email" class="form-control rounded-pill" id="inputPassword2" placeholder="email@example.com">
-  </div>
-  <button type="submit" class="btn primary rounded-pill">Get Started Free</button>
-</form>
+  </div> 
+   <button type="submit" class="col-xsm-2 btn primary rounded-pill">Get Started Free</button>
+</div>
 </div>
 
 <!-- Footer -->
 
 <footer>
-  <div class="row footer" style="padding-top: 200px;">
-    <div class="col-md-3">
-      hey
+  <div class="row footer">
+    <div class="col-md-3 col-foot">
+      <i class="fas fa-map-marker-alt"></i>
+       Contact us for location details or to schedule a meeting.
     </div>
-    <div class="col-md-3">
-      hey 2
+    <div class="col-md-3 col-foot">
+      <i class="fas fa-phone"></i>
+      +1-543-123-4567
+    </br>
+    <i class="fas fa-envelope"></i>
+  example@fylo.com
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-2 col-foot">
       About Us
     </br>
     Jobs
@@ -165,15 +182,17 @@
     </br>
     Blog
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-2 col-foot">
       Contact Us
       </br>
       Terms
       </br>
       Privacy
     </div>
-    <div class="col-sm-2">
-      hey
+    <div class="col-md-2 col-foot">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
     </div>
   </div>
 </footer>
